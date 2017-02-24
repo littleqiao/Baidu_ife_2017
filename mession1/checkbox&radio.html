@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>checkbox&radio</title>
+	<style>
+		input[type = 'radio']{
+			display: none;
+		} 
+		input[type = 'checkbox']{
+			display: none;
+		} 
+		 .r label {
+					  display: inline-block;
+					  width: 16px;
+					  height: 16px;
+					  position: relative;
+					  background: url(img/bg-1.png) ;
+					  
+				}
+		input[type='radio']:checked+label {
+		  			background: url(img/bg-2.png) ;
+				} 
+		.c label {
+			  display: inline-block;
+			  width: 14px;
+			  height: 15px;
+			  position: rlative;
+			  background: url(img/bg-3.png) ;
+		}
+		input[type='checkbox']:checked+label {
+		  			background: url(img/bg-4.png) ;
+		}
+	</style>
+</head>
+<body>
+    <form action="#">
+		<div class="r">
+			男：<input id="sex1" type="radio" name="sex" value="男" ><label for="sex1"></label>
+			女：<input id="sex2" type="radio" name="sex" value="女" ><label for="sex2"></label> <br>
+		</div>
+		
+		<div class="c">
+			打球：<input id="hobby1" type="checkbox" name="hobby" value="ball"><label for="hobby1"></label>
+			唱歌：<input id="hobby2" type="checkbox" name="hobby" value="sing"><label for="hobby2"></label>
+			读书：<input id="hobby3" type="checkbox" name="hobby" value="read"><label for="hobby3"></label>
+		</div>
+		
+	
+	</form>
+	
+</body>
+</html>
